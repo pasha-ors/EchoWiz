@@ -34,11 +34,9 @@ if __name__ == "__main__":
     while True:
         text = recognize_speech()
         if str(text).lower() == "goodbye":
-            speak_text("It was nice talking to you")
-            break
-        if str(text).lower() == "what is my girlfriend's name":
             if text:
-                speak_text("Kristina")
+                speak_text("It was nice talking to you")
+                break
         else:
             if text:
                 speak_text(f"You said: {text}")
